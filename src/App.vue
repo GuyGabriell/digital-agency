@@ -4,6 +4,7 @@ import Navbar from './components/Narbar.vue'
 import PrimaryButton from "./components/PrimaryButton.vue";
 import HeroSection from "./components/pages/HeroSection.vue";
 import IntroSection from "./components/pages/IntroSection.vue";
+import ServicesSection from "./components/pages/ServicesSection.vue";
 
 </script>
 
@@ -19,6 +20,7 @@ import IntroSection from "./components/pages/IntroSection.vue";
 <main>
   <HeroSection />
   <IntroSection />
+  <ServicesSection />
   
 </main>
 
