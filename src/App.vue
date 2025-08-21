@@ -2,7 +2,7 @@
 import CompanyInfo from './components/CompanyInfo.vue'
 import Navbar from './components/Narbar.vue'
 import PrimaryButton from "./components/PrimaryButton.vue";
-
+import HeroSection from "./components/pages/HeroSection.vue";
 
 </script>
 
@@ -15,6 +15,10 @@ import PrimaryButton from "./components/PrimaryButton.vue";
     />
     <Navbar />
 </header>
+<main>
+  <HeroSection />
+  
+</main>
 
 </template>
 
