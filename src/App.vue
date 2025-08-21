@@ -1,5 +1,8 @@
 <script setup>
 import CompanyInfo from './components/CompanyInfo.vue'
+import Navbar from './components/Narbar.vue'
+import PrimaryButton from "./components/PrimaryButton.vue";
+
 
 </script>
 
@@ -10,6 +13,7 @@ import CompanyInfo from './components/CompanyInfo.vue'
       address="Company Address type here" 
       phone="+94 000 00000" 
     />
+    <Navbar />
 </header>
 
 </template>
