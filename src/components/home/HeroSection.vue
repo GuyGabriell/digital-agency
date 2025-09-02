@@ -1,6 +1,11 @@
 <script setup>
 import images from "/public/images/javi.png";
-import PrimaryButton from "../PrimaryButton.vue";
+import PrimaryButton from "../common/PrimaryButton.vue";
+
+
+
+
+
 </script>
 <template>
   <header class="md:px-[135px] md:py-[106px] relative mb-[48px] md:mb-[83px]">
@@ -63,7 +68,9 @@ import PrimaryButton from "../PrimaryButton.vue";
     >
       <!-- Left Column -->
       <div>
-        <p class="text-[#E87D0E] font-bold text-xl mb-2">Digital Marketing</p>
+        <p class="text-[#E87D0E] font-bold text-xl mb-2 font-Poppins">
+          Digital Marketing
+        </p>
         <h1
           class="text-3xl md:text-[50px] font-bold text-black leading-[155%] font-Poppins"
         >

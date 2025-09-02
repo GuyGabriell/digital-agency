@@ -1,31 +1,18 @@
 <script setup>
-import CompanyInfo from "./components/CompanyInfo.vue";
-import Navbar from "./components/Narbar.vue";
-import PrimaryButton from "./components/PrimaryButton.vue";
-import Card from "./components/Card.vue";
-import HeroSection from "./components/pages/HeroSection.vue";
-import IntroSection from "./components/pages/IntroSection.vue";
-import ServicesSection from "./components/pages/ServicesSection.vue";
-import FeaturesSection from "./components/pages/FeaturesSection.vue";
-import ProjectsSection from "./components/pages/ProjectsSection.vue"; 
+import CompanyInfo from "@/components/common/CompanyInfo.vue";
+import Navbar from "@/components/common/Navbar.vue";
 
-
-
+//import Footer from "@/components/common/Footer.vue";
 </script>
 
 <template>
-  <header>
+  <div>
     <CompanyInfo address="Company Address type here" phone="+94 000 00000" />
     <Navbar />
-  </header>
-  <main>
-    <HeroSection />
-    <IntroSection />
-    <ServicesSection />
-    <FeaturesSection />
-    <ProjectsSection />
-   
- 
 
-  </main>
+    <router-view />
+    <!-- loads Home, About, Services, Contact -->
+
+    <Footer />
+  </div>
 </template>

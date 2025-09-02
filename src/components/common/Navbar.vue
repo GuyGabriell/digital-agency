@@ -1,12 +1,14 @@
 <script setup>
 import { ref } from "vue";
-import PrimaryButton from "./PrimaryButton.vue"
+import PrimaryButton from "./PrimaryButton.vue";
 const isOpen = ref(false);
 const links = [
-  { name: "Home", href: "#" },
-  { name: "About us", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "News", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "News", href: "/news" },
+ 
+ 
 ];
 </script>
 <template>
@@ -65,5 +67,3 @@ const links = [
     </div>
   </nav>
 </template>
-
-

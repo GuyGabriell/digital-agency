@@ -1,6 +1,6 @@
 <script setup>
-import Card from "../Card.vue";
-import NavigationBtn from "../NavigationBtn.vue";
+import Card from "../common/Card.vue";
+import NavigationBtn from "../common/NavigationBtn.vue";
 
 const cards = [
   {

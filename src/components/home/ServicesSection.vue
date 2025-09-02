@@ -1,5 +1,5 @@
 <script setup>
-import ArrowButton from "../ArrowButton.vue";
+import ArrowButton from "../common/ArrowButton.vue";
 </script>
 
 <template>
