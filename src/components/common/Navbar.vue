@@ -7,8 +7,6 @@ const links = [
   { name: "About us", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "News", href: "/news" },
- 
- 
 ];
 </script>
 <template>
@@ -29,20 +27,20 @@ const links = [
       <div
         class="hidden md:flex items-center gap-10 text-base font-nornal font-Poppins"
       >
-        <a
+        <RouterLink
           v-for="link in links"
           :key="link.name"
-          :href="link.href"
+          :to="link.href"
           class="hover:text-gray-600"
         >
           {{ link.name }}
-        </a>
-        <a href="#">
+        </RouterLink>
+        <RouterLink to="/contact">
           <PrimaryButton
             text="Contact Us"
             customClass="bg-[#E47500] !text-[#DC7000] !text-[13px]"
           />
-        </a>
+        </RouterLink>
       </div>
     </div>
     <!-- Mobile Menu -->
@@ -50,20 +48,20 @@ const links = [
       v-if="isOpen"
       class="md:hidden mt-4 flex flex-col gap-4 bg-[#E47500] px-10 py-3 rounded-b-lg"
     >
-      <a
+      <RouterLink
         v-for="link in links"
         :key="link.name"
         :href="link.href"
         class="hover:text-gray-600"
       >
         {{ link.name }}
-      </a>
-      <a href="#">
+      </RouterLink>
+      <RouterLink to="/contact">
         <PrimaryButton
           text="Contact Us"
           customClass="bg-[#E47500] !text-[#DC7000] !text-[13px] !w-full !font-Poppins"
         />
-      </a>
+      </RouterLink>
     </div>
   </nav>
 </template>

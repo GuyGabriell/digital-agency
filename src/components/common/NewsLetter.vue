@@ -33,14 +33,14 @@ const handleSubmit = () => {
 
 <template>
   <!-- Title -->
-  <div class="md:pl-[135px]">
+  <div class="md:pl-[135px] pl-[22px] mt-[49px] md:mt-[0px]">
     <h2 class="text-3xl font-semibold mb-[32px] fontPoppins">{{ header }}</h2>
     <p class="md:mb-[74px] font-medium font-Poppins text-[16px] leading-[188%]">Lorem Ipsum is simply dummy text of the printing and typesetting <br /> industry.</p>
   </div>
 
   <!-- Newsletter Section -->
   <div
-    class="bg-[#1B1B1B] text-white md:mx-[135px] md:px-[52px] md:py-[40px] flex flex-col md:flex-row md:items-center md:justify-between rounded-xl font-Poppins md:mb-[150px]"
+    class="bg-[#1B1B1B] text-white md:mx-[135px]  px-4 md:px-[52px] py-8 md:py-[40px]  mr-[32px] ml-[22px]  flex flex-col md:flex-row md:items-center md:justify-between rounded-xl font-Poppins md:mb-[150px] mt-[41px] md:mb-[0px] "
   >
     <!-- Left side (text) -->
     <div>
@@ -58,7 +58,7 @@ const handleSubmit = () => {
         v-model="email"
         type="email"
         placeholder="Enter email address"
-        class="flex-1 px-3 py-3 rounded-lg text-[13px] text-[#898989]  font-Poppins"
+        class="flex w-full px-3 py-3 rounded-lg text-[13px] text-[#898989]  font-Poppins"
         required
       />
 

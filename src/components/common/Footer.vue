@@ -52,7 +52,7 @@ const iconMap = { Facebook, Instagram, Twitter, Linkedin };
 <template>
   <footer class="bg-[#1B1B1B] text-[#D2D2D2]">
     <div
-      class="max-w-[1440px] mx-auto md:pl-[101px] md:pr-[120px] md:pt-[79px] grid md:grid-cols-4 gap-8"
+      class="hidden max-w-[1440px] mx-auto md:pl-[101px] md:pr-[120px] md:pt-[79px] md:grid md:grid-cols-4 gap-8"
     >
       <!-- Logo & Description -->
       <div class="w-[372px]">
@@ -107,7 +107,7 @@ const iconMap = { Facebook, Instagram, Twitter, Linkedin };
       </div>
     </div>
     <!-- Copyright -->
-    <div class="border-t md:mt-[53px] flex justify-center text-center py-[29px] text-white font-Poppins font-normal text-[13px]">
+    <div class="border-t md:mt-[53px] mt-[69px] flex justify-center text-center py-[29px] text-white font-Poppins font-normal text-[13px]">
       {{ copyright }}
     </div>
   </footer>
