@@ -1,10 +1,11 @@
 <script setup>
-import NewsLetter from "@/components/common/NewsLetter.vue";
-import Footer from "@/components/common/Footer.vue";
+import HeroAbout from "@/components/about-us/HeroAbout.vue";
+
 
 </script>
 
 <template>
   <div>
+    <HeroAbout />
   </div>
 </template>

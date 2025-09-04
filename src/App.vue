@@ -21,7 +21,6 @@ import Footer from "@/components/common/Footer.vue";
       buttonText="continue"
       @submit="handleNewsletterSubmit"
     />
-
     <!-- <Footer /> -->
      <Footer
       logoText="LOGO"

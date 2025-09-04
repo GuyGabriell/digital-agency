@@ -52,7 +52,7 @@ const handleSubmit = () => {
     </div>
 
     <!-- Right side (form) -->
-   <div class="bg-white rounded-lg">
+   <div class="bg-white rounded-lg mt-[43px]">
      <form @submit.prevent="handleSubmit" class="flex">
       <input
         v-model="email"

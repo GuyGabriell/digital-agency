@@ -13,6 +13,6 @@ defineProps({
   <button 
    :class="`bg-white text-black px-5 py-2 rounded-lg  ${customClass}`"
   >
-    {{ text }}
+     <slot>{{ text }}</slot>
   </button>
 </template>

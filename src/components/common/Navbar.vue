@@ -25,20 +25,32 @@ const links = [
       </button>
       <!-- Links + Contact Us (Desktop) -->
       <div
-        class="hidden md:flex items-center gap-10 text-base font-nornal font-Poppins"
+        class="hidden md:flex items-center gap-10 text-base font-normal font-Poppins"
       >
         <RouterLink
           v-for="link in links"
           :key="link.name"
           :to="link.href"
-          class="hover:text-gray-600"
+          v-slot="{ isActive }"
         >
-          {{ link.name }}
+          <span
+            class="flex items-center gap-2 hover:text-gray-600"
+            :class="isActive ? 'text-white font-semibold' : ''"
+          >
+            <!-- Circle indicator (only when active) -->
+            <span
+              v-if="isActive"
+              class="w-3 h-3 rounded-full bg-white"
+            ></span>
+            {{ link.name }}
+          </span>
         </RouterLink>
+
+        <!-- Contact button stays untouched -->
         <RouterLink to="/contact">
           <PrimaryButton
             text="Contact Us"
-            customClass="bg-[#E47500] !text-[#DC7000] !text-[13px]"
+            customClass="bg-[#E47500] !text-[#DC7000] !text-[13px] !w-full !font-Poppins"
           />
         </RouterLink>
       </div>
@@ -46,7 +58,7 @@ const links = [
     <!-- Mobile Menu -->
     <div
       v-if="isOpen"
-      class="md:hidden mt-4 flex flex-col gap-4 bg-[#E47500] px-10 py-3 rounded-b-lg"
+      class="md:hidden block mt-4 flex flex-col gap-4 bg-[#E47500] px-10 py-3 rounded-b-lg"
     >
       <RouterLink
         v-for="link in links"
