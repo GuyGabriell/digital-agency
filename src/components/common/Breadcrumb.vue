@@ -15,20 +15,20 @@ const props = defineProps({
 </script>
 
 <template>
-  <nav class="flex items-center space-x-2 text-sm">
+  <nav class="flex items-center space-x-2 text-[12px]">
     <template v-for="(item, index) in items" :key="index">
       <div class="flex items-center">
         <!-- Breadcrumb link -->
         <a
           v-if="!item.current"
           :href="item.href"
-          class="text-gray-500 hover:text-orange-500"
+          class="text-[#848484] hover:text-[#FB9E3C] font-Poppins"
         >
           {{ item.label }}
         </a>
 
         <!-- Current page -->
-        <span v-else class="text-orange-500 font-medium">
+        <span v-else class="text-[#FB9E3C] font-normal font-Poppins">
           {{ item.label }}
         </span>
       </div>
@@ -36,7 +36,7 @@ const props = defineProps({
       <!-- Separator -->
       <ChevronRight
         v-if="index < items.length - 1"
-        class="w-4 h-4 text-gray-400"
+        class="w-4 h-4 text-[#848484]"
       />
     </template>
   </nav>

@@ -1,6 +1,5 @@
 <script setup>
 import images from "/public/images/javi.png";
-import PrimaryButton from "../common/PrimaryButton.vue";
 
 
 

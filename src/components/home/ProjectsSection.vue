@@ -30,7 +30,7 @@ const projects = [
 </script>
 
 <template>
-  <div class="mt-[60px] md:mt-[0px] mb-[103px] md:mb-[164px] md:px-[135px]">
+  <div class="mt-[60px] md:mt-[0px] mb-[103px] md:mb-[164px] md:px-[110px]">
     <div class="text-center md:mt-[140px] md:mb-[70px]">
       <h2
         class="font-Poppins text-[#222222] text-xl md:text-[25px] font-semibold leading-[188%] mb-[23px]"

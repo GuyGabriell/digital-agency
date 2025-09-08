@@ -24,17 +24,20 @@ defineProps({
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 mb-[px] md:mb-[144px]">
+     <div class="md:hidden">
+      <img :src="images" alt="heroabout" />
+    </div>
     <div
-      class="bg-[#E27A0C1F] pl-[px] md:pl-[110px] pr-[px] md:pr-[166px] py-[px] md:py-[112px] font-Poppins"
+      class="bg-[#E27A0C1F] pl-[31px] md:pl-[110px] pr-[37px] md:pr-[166px] py-[74px] md:py-[112px] font-Poppins"
     >
       <div>
-        <Breadcrumb :items="breadcrumbItems" />
+        <Breadcrumb :items="breadcrumbItems" class="mb-[12px] md:mb-[38px]" />
       </div>
-      <h2 class="md:text-[30px] font-bold leadind-snug mb-[px] md:mb-[25px]">
+      <h2 class="md:text-[30px] font-bold leadind-snug mb-[20px] md:mb-[25px]">
         {{ title }}
       </h2>
       <p
-        class="text-[#222222] text-[15px] font-normal font-Poppins mb-[px] md:mb-[57px]"
+        class="text-[#222222] text-[15px] font-normal font-Poppins mb-[37px] md:mb-[57px]"
       >
         {{ description }}
       </p>
@@ -63,7 +66,7 @@ defineProps({
         </PrimaryButton>
       </a>
     </div>
-    <div>
+    <div class="hidden md:block">
       <img :src="images" alt="heroabout" />
     </div>
   </div>
