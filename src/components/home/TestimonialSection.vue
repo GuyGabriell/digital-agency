@@ -14,7 +14,6 @@ const testimonial = {
 
 function handleReadMore() {
   console.log("Read more clicked!");
-
 }
 </script>
 
@@ -34,13 +33,20 @@ function handleReadMore() {
         class="w-[331px] pb-[px] px-2 md:w-[536px] md:mt-[37px] md:ml-[50px] font-Poppins"
       >
         <!--desktop-->
-        <h3 class="w-[472px] md:text-[30px] leading-snug font-Poppins font-medium mb-[43px] mt-[px] hidden md:block">
-          Lorem Ipsum is simply dummy <br> text dummy text
+        <h3
+          class="w-[472px] md:text-[30px] leading-snug font-Poppins font-medium mb-[43px] mt-[px] hidden md:block"
+        >
+          Lorem Ipsum is simply dummy <br />
+          text dummy text
         </h3>
         <!--mobile-->
-      <h1 class="text-[22px] leading-snug font-Poppins font-normal mb-[34px] md:hidden block ">
-        Lorem Ipsum is simply <br> dummy <br> text dummy text
-      </h1>
+        <h1
+          class="text-[22px] leading-snug font-Poppins font-normal mb-[34px] md:hidden block"
+        >
+          Lorem Ipsum is simply <br />
+          dummy <br />
+          text dummy text
+        </h1>
 
         <p
           class="text-[13px] leading-snug md:text-[17px] font-Poppins leading-[100%] font-normal text-[#515151] mb-[18px] md:mb-[18px]"
@@ -48,7 +54,7 @@ function handleReadMore() {
           {{ testimonial.description1 }}
         </p>
 
-        <p 
+        <p
           class="text-[12px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mb-[46px] md:mb-[46px]"
         >
           {{ testimonial.description2 }}

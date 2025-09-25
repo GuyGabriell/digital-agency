@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import PrimaryButton from "./PrimaryButton.vue";
+
 const isOpen = ref(false);
+
 const links = [
   { name: "Home", href: "/" },
   { name: "About us", href: "/about" },
@@ -9,6 +11,7 @@ const links = [
   { name: "News", href: "/news" },
 ];
 </script>
+
 <template>
   <nav class="h-[px] bg-[#E47500] py-4 text-white px-[20px] md:px-[63px]">
     <div class="md:max-w-[1440px] mx-auto flex items-center justify-between">
@@ -38,10 +41,7 @@ const links = [
             :class="isActive ? 'text-white font-semibold' : ''"
           >
             <!-- Circle indicator (only when active) -->
-            <span
-              v-if="isActive"
-              class="w-3 h-3 rounded-full bg-white"
-            ></span>
+            <span v-if="isActive" class="w-3 h-3 rounded-full bg-white"></span>
             {{ link.name }}
           </span>
         </RouterLink>
@@ -55,6 +55,7 @@ const links = [
         </RouterLink>
       </div>
     </div>
+
     <!-- Mobile Menu -->
     <div
       v-if="isOpen"
@@ -63,11 +64,12 @@ const links = [
       <RouterLink
         v-for="link in links"
         :key="link.name"
-        :href="link.href"
+        :to="link.href"
         class="hover:text-gray-600"
       >
         {{ link.name }}
       </RouterLink>
+      <!-- Contact button stays untouched -->
       <RouterLink to="/contact">
         <PrimaryButton
           text="Contact Us"

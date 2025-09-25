@@ -13,7 +13,7 @@ import spans from "../../assets/spans.svg";
       <div class="mx-auto text-center mb-[48px] md:mb-[49px]">
         <!-- title mobile -->
         <h2
-          class="font-Poppins leading-[188%] text-base md:text-[25px] font-semibold text-[#222222] block md:hidden"
+          class="font-Poppins leading-[188%] text-base md:text-[25px] mt-[49px] md:mt-[px] font-semibold text-[#222222] block md:hidden"
         >
           Lorem Ipsum issimply dummy text of the printing and typesetting
           industry.

@@ -1,8 +1,6 @@
 <script setup>
 import images from "/public/images/javi.png";
-
-
-
+import PrimaryButton from "../common/PrimaryButton.vue";
 
 
 </script>
@@ -67,23 +65,23 @@ import images from "/public/images/javi.png";
     >
       <!-- Left Column -->
       <div>
-        <p class="text-[#E87D0E] font-bold text-xl mb-2 font-Poppins">
+        <p class="text-[#E87D0E] mb-[31px] font-bold text-xl mb-2 font-Poppins">
           Digital Marketing
         </p>
         <h1
-          class="text-3xl md:text-[50px] font-bold text-black leading-[155%] font-Poppins"
+          class="text-3xl mb-[28px]  md:text-[50px] font-bold text-black leading-[155%] font-Poppins"
         >
           Work that we <br class="hidden md:block" />
           produce for our <br class="hidden md:block" />
           clients
         </h1>
         <p
-          class="leading-[200%] text-[16px] text-black font-medium font-Poppins mb-5 max-w-md"
+          class="leading-[200%] text-[16px] text-black font-medium font-Poppins mb- max-w-md"
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard.
         </p>
-        <a href="#">
+        <a href="Get more details">
           <PrimaryButton
             text="Get more details"
             customClass="!bg-[#FB9E3C] !text-white !text-base !font-medium !font-Poppins !rounded-full !px-6 !py-3 !mt-14"
