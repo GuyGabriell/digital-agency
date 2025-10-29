@@ -41,12 +41,12 @@ const stats = [
   <div class="ml-[28px] md:ml-[170px] mr-[29px] md:mr-[130px]">
     <!--heroservice-->
     <div
-      class="flex items-center justify-center mt-[62px] md:mt-[px] mb-[33px] md:mb-[px]"
+      class="flex items-center justify-center mt-[62px] md:mt-[97px] mb-[px] md:mb-[px]"
     >
-      <Breadcrumb :items="breadcrumbItems" class="mb-[px] md:mb-[15px]" />
+      <Breadcrumb :items="breadcrumbItems" />
     </div>
 
-    <div class="text-center mt-[px] md:mt-[94px]">
+    <div class="text-center mt-[33px] md:mt-[15px]">
       <h1 class="font-Poppins text-[25px] md:text-[33px] font-semibold mb-[33px] md:mb-[13px]">
         {{ header }}
       </h1>
@@ -55,7 +55,6 @@ const stats = [
       </p>
     </div>
 
-    <!--stats-->
     <!-- stats -->
     <div
       class="grid grid-cols-2 bg-[#F4F4F4] md:bg-white md:shadow-xl rounded-lg  md:flex md:flex-row mb-[px] md:mb-[77px] md:pl-[90px] md:py-[72px]"

@@ -11,9 +11,9 @@ import Footer from "@/components/common/Footer.vue";
     <Navbar />
 
     <router-view />
-    <!-- loads Home, About, Services, Contact -->
+    <!-- loads Home, About, Services, News, Contact -->
 
-     <NewsLetter
+    <NewsLetter
       header="Join Our community"
       title="Stay in the loop"
       description1="Subscribe to receive the latest news and updates about TDA."
@@ -22,7 +22,7 @@ import Footer from "@/components/common/Footer.vue";
       @submit="handleNewsletterSubmit"
     />
     <!-- <Footer /> -->
-     <Footer
+    <Footer
       logoText="LOGO"
       email="@Company.com"
       phone="+9000 0000 000"

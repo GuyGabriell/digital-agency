@@ -1,9 +1,8 @@
 <script setup>
 import { ref } from "vue";
-import { CheckCircle2, Play } from "lucide-vue-next"; // or any icon set you like
+import { CheckCircle2, Play } from "lucide-vue-next";
 
-// sample data – make dynamic if needed
-const videoSrc = "/images/workhard.jpg"; // replace with your own image
+const videoSrc = "public/images/introvid.png";
 const title = "Lorem Ipsum is simply dummy text.";
 const description =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.";
@@ -23,12 +22,14 @@ function openVideo() {
 <template>
   <section>
     <div
-      class="md:max-w-[1254px] px- md:pl-[109px] pr-[px] md:pr-[146px] py-12 md:py-20 mb-[px] md:mb-[100px] flex flex-col md:flex-row items-center gap-[85px]"
+      class="md:max-w-[1254px] px-4 md:pl-[109px] md:pr-[146px] py-12 md:py-20 mb-10 md:mb-[100px] flex flex-col md:flex-row items-center gap-[85px]"
     >
       <!-- Left: Image with play button -->
-      <div class="relative w-full  md:w-[669px] md:h-[354px] rounded-[5px]  overflow-hidden">
+      <div
+        class="relative w-full md:w-[669px] md:h-[354px] rounded-[5px] overflow-hidden"
+      >
         <img
-          src="/images/introvid.png"
+          :src="videoSrc"
           alt="Video preview"
           class="w-full h-full object-cover"
         />
@@ -42,7 +43,7 @@ function openVideo() {
 
       <!-- Right: Text and checklist -->
       <div class="w-full md:w-1/2 space-y-5">
-        <h2 class="text-2xl md:text-3xl font-semibold  font-Poppins">
+        <h2 class="text-2xl md:text-3xl font-semibold font-Poppins">
           {{ title }}
         </h2>
         <p class="text-[#525252] leading-relaxed font-Poppins">
@@ -54,28 +55,30 @@ function openVideo() {
             :key="index"
             class="flex items-center text-[#525252] font-Poppins"
           >
-            <CheckCircle2 class="bg-[#2FAB73] text-white rounded-full w-5 h-5 mr-2" />
+            <CheckCircle2
+              class="bg-[#2FAB73] text-white rounded-full w-5 h-5 mr-2"
+            />
             {{ item }}
           </li>
         </ul>
       </div>
 
-      <!-- Optional modal if you want to play video -->
+      <!-- Video modal -->
       <div
         v-if="showModal"
         class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
       >
-        <div class="bg-white p-4 rounded-xl max-w-xl w-full relative">
+        <div class="bg-transparent p-4 rounded-xl max-w-xl w-full relative">
           <button
             @click="showModal = false"
             class="absolute top-3 right-3 text-gray-500"
           >
             ✕
           </button>
-          <!-- Replace iframe src with your video link -->
           <iframe
-            class="w-full h-64 md:h-96"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            class="w-full h-64 md:h-96 rounded-md border-0 outline-none"
+            style="border: none; outline: none;"
+            src="https://www.youtube.com/embed/SfMT4Agg8Xw"
             title="Video player"
             frameborder="0"
             allow="autoplay; encrypted-media"

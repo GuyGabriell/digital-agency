@@ -28,20 +28,20 @@ function handleReadMore() {
       >
         <!--desktop-->
         <h1
-          class="w-[472px] text-[px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px]"
+          class="w-[472px] text-[21px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px] text-[#000000]"
         >
           Lorem Ipsum is simply dummy <br />
           text dummy text
         </h1>
 
         <p
-          class="text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+          class="w-[319px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[34px] md:mt-[60px]"
         >
           {{ service.description1 }}
         </p>
 
         <p
-          class="text-[12px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+          class="w-[304px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[22px] md:mt-[60px] mb-[30px] md:mt-[46px]"
         >
           {{ service.description2 }}
         </p>
@@ -50,7 +50,7 @@ function handleReadMore() {
         <a :href="service.link" @click.prevent="handleReadMore">
           <SecondaryButton
             :text="service.buttonText"
-            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2 !mt-[46px]"
+            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2"
           />
         </a>
       </div>
@@ -67,7 +67,7 @@ function handleReadMore() {
       <img
         :src="service.image"
         alt="Service"
-        class="md:hidden mt-[66px] object-cover"
+        class="md:hidden mb-[49px] mt-[66px] object-cover"
       />
      
     </div>
@@ -77,8 +77,7 @@ function handleReadMore() {
     <div
       class="md:max-w-[px] md:h-[px] mx-auto px-[px] md:pl-[109px] md:mb-[176px] pr-[px] md:pr-[161px] flex flex-col md:flex-row items-center"
     >
-
-     <!-- image-desktop -->
+      <!-- image-desktop -->
       <div>
         <img
           src="/images/service1.png"
@@ -91,20 +90,20 @@ function handleReadMore() {
       >
         <!--desktop-->
         <h1
-          class="w-[472px] text-[px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px]"
+           class="w-[472px] text-[21px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px] text-[#000000]"
         >
           Lorem Ipsum is simply dummy <br />
           text dummy text
         </h1>
 
         <p
-          class="text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+          class="w-[319px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[34px] md:mt-[60px]"
         >
           {{ service.description1 }}
         </p>
 
         <p
-          class="text-[12px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+           class="w-[304px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[22px] md:mt-[60px] mb-[30px] md:mt-[46px]"
         >
           {{ service.description2 }}
         </p>
@@ -113,16 +112,17 @@ function handleReadMore() {
         <a :href="service.link" @click.prevent="handleReadMore">
           <SecondaryButton
             :text="service.buttonText"
-            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2 !mt-[46px]"
+            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2"
           />
         </a>
       </div>
+      
      
       <!-- image-mobile -->
       <img
         src="/images/service1.png"
         alt="Service"
-        class="md:hidden mt-[66px] object-cover"
+        class="md:hidden mb-[49px] mt-[66px] w-full h-[331px] object-cover"
       />
       
     </div>
@@ -137,20 +137,20 @@ function handleReadMore() {
       >
         <!--desktop-->
         <h1
-          class="w-[472px] text-[px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px]"
+           class="w-[472px] text-[21px] md:text-[30px] leading-snug font-Poppins font-medium mb-[px] text-[#000000]"
         >
           Lorem Ipsum is simply dummy <br />
           text dummy text
         </h1>
 
         <p
-          class="text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+          class="w-[319px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[34px] md:mt-[60px]"
         >
           {{ service.description1 }}
         </p>
 
         <p
-          class="text-[12px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[60px]"
+            class="w-[304px] md:w-full text-[13px] md:text-[17px] font-Poppins leading-snug font-normal text-[#515151] mt-[22px] md:mt-[60px] mb-[30px] md:mt-[46px]"
         >
           {{ service.description2 }}
         </p>
@@ -159,7 +159,7 @@ function handleReadMore() {
         <a :href="service.link" @click.prevent="handleReadMore">
           <SecondaryButton
             :text="service.buttonText"
-            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2 !mt-[46px]"
+            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2"
           />
         </a>
       </div>
@@ -176,7 +176,7 @@ function handleReadMore() {
       <img
         src="/images/service2.png"
         alt="Service" 
-        class="md:hidden mt-[66px] object-cover"
+        class="md:hidden mt-[66px] w-full h-[243px] object-cover"
       />
       
     </div>
