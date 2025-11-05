@@ -35,8 +35,8 @@ const handleSubmit = () => {
   <!-- Title -->
   <div class="md:px-[110px] pl-[22px] mt-[49px] md:mt-[0px]">
     <h2 class="text-3xl font-semibold mb-[32px] font-Poppins">{{ header }}</h2>
-    <p class="md:mb-[74px] font-medium font-Poppins text-[16px] leading-[188%]">
-      Lorem Ipsum is simply dummy text of the printing and typesetting <br />
+    <p class="md:mb-[74px] font-medium font-Poppins text-[12px] md:text-[16px] text-[#525252] leading-[188%]">
+      Lorem Ipsum is simply dummy text of the printing and typesetting <br class="hidden md:block" />
       industry.
     </p>
   </div>

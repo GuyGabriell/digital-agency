@@ -5,10 +5,16 @@ defineProps({
 });
 </script>
 <template>
-  <div class="hidden md:flex py-0.5 bg-white text-[#1A1A1A] flex justify-end items-center gap-10 pr-[90px]">
+  <div
+    class="hidden md:flex py-0.5 bg-white text-[#1A1A1A] flex justify-end items-center gap-10 pr-[90px]"
+  >
     <div class="flex items-center gap-2.5">
       <slot name="location-icon">
-        <img src="@/assets/icons /location.svg" alt="Location" class="h-4 w-4" />
+        <img
+          src="@/assets/icons /location.svg"
+          alt="Location"
+          class="h-4 w-4"
+        />
       </slot>
       <span class="text-xs font-Poppins">{{ address }}</span>
     </div>

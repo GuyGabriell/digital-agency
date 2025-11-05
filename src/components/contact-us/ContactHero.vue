@@ -1,9 +1,16 @@
 <script setup>
 import Breadcrumb from "@/components/common/Breadcrumb.vue";
+import desktopmap from "@/assets/desktopmap.svg";
+import mobilemap from "@/assets/mobilemap.svg";
+import facebook from "/public/facebook.svg";
+import insta from "/public/insta.svg";
+import x from "/public/x.svg";
+import linkedin from "/public/linkedin.svg";
+import contact from "/public/contact.svg";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "News", href: "/news", current: true },
+  { label: "Contact Us", href: "/contact", current: true },
 ];
 
 defineProps({
@@ -20,12 +27,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="ml-[28px] md:ml-[170px] mr-[29px] md:mr-[130px] mb-[47px] md:mb-[103px]">
+  <div
+    class="ml-[28px] md:ml-[170px] mr-[29px] md:mr-[130px] mb-[47px] md:mb-[103px]"
+  >
     <!--heronews-->
     <div
       class="flex items-center justify-center mt-[62px] md:mt-[94px] mb-[33px] md:mb-[15px]"
     >
-      <Breadcrumb :items="breadcrumbItems"/>
+      <Breadcrumb :items="breadcrumbItems" />
     </div>
 
     <div class="text-center mb-[px] md:mt-[px]">
@@ -41,24 +50,135 @@ defineProps({
       </p>
     </div>
 
-    <!--searchbar-->
-    <div class="bg-[#F1F1F1] flex items-center rounded-xl space-x-[19px] md:w-[400px] md:mx-auto mt-[33px] md:mt-[74px]">  
-      <span
-        ><svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="ml-[25px]"
-        >
-          <path
-            d="M14.9084 14.0247L10.5511 9.66728C11.3775 8.64696 11.875 7.34981 11.875 5.93752C11.875 2.66359 9.21142 0 5.93749 0C2.66356 0 0 2.66359 0 5.93752C0 9.21145 2.66359 11.875 5.93752 11.875C7.34981 11.875 8.64696 11.3775 9.66729 10.5511L14.0247 14.9085C14.1468 15.0305 14.3446 15.0305 14.4667 14.9085L14.9085 14.4666C15.0305 14.3446 15.0305 14.1467 14.9084 14.0247ZM5.93752 10.625C3.35268 10.625 1.25001 8.52236 1.25001 5.93752C1.25001 3.35268 3.35268 1.25001 5.93752 1.25001C8.52236 1.25001 10.625 3.35268 10.625 5.93752C10.625 8.52236 8.52236 10.625 5.93752 10.625Z"
-            fill="#727272"
-          />
-        </svg>
-      </span>
-      <input type="text" placeholder="Search" class="py-4"/>
+    <!--desktopMap-->
+    <div class="mt-[87px] md:mt-[93px] mb-[79px] md:-0">
+      <div class="px-0 md:px-[185px] hidden md:block">
+        <img :src="desktopmap" alt="map" />
+      </div>
+      <div class="md:hidden block px-[23] md:px-[0]">
+        <img :src="mobilemap" alt="map" />
+      </div>
+    </div>
+  </div>
+
+  <!-- socials/contact/address -->
+  <div
+    class="flex flex-col md:flex-row  md:justify-between pl-[28px] md:pl-[133px] pr-[20px] md:pr-[119px] mb-[76px] md:mb-[147px] font-Poppins text-[#333333] space-y-6 md:space-y-0"
+  >
+    <!-- desktop-Socials -->
+    <div class="flex md:flex-col hidden md:block">
+      <div class="w-[184px] mr-0 md:mr-[97px]">
+        <h2 class="text-[14px] md:text-[16px] font-normal mb-2 md:mb-3">
+          Follow us
+        </h2>
+        <div class="flex space-x-2">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="facebook" alt="Facebook" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="insta" alt="Instagram" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="x" alt="Twitter/X" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="linkedin" alt="LinkedIn" class="w-[35px] h-[35px]" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- Contact -->
+    <div class="flex  md:border-l border-[#C2C2C2] h-[70px]">
+      <div class="w-[221px] flex items-center space-x-3 md:ml-[105px] md:mr-[109px]">
+        <img
+          :src="contact"
+          alt="Contact"
+          class="w-[29px] h-[29px] object-cover"
+        />
+        <p class="text-[16px] md:text-[20px] font-light">+94 0000 00000</p>
+      </div>
+    </div>
+
+     <!-- Divider -->
+    <div
+      class="md:hidden block border-b border-[#C2C2C2]"
+    ></div>
+
+    <!-- Address -->
+    <div class="flex border-l-0 md:border-l border-[#C2C2C2] h-[70px]">
+      <div class="w-[373px] flex space-x-3 items-center md:ml-[99px]">
+        <img
+          src="@/assets/icons /location.svg"
+          alt="Location"
+          class="w-[29px] h-[29px] object-cover"
+        />
+        <p class="text-[14px] md:text-[16px] font-light">
+          but also the leap into electronic typesetting
+        </p>
+      </div>
+    </div>
+
+     <!-- Divider -->
+    <div
+      class="md:hidden  border-b border-[#C2C2C2]"
+    ></div>
+
+    <!-- mobile-Socials -->
+    <div class="flex md:flex-col md:hidden">
+      <div class="w-[184px] mr-0 md:mr-[97px]">
+        <h2 class="text-[14px] md:text-[16px] font-normal mb-2 md:mb-3">
+          Follow us
+        </h2>
+        <div class="flex space-x-2">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="facebook" alt="Facebook" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="insta" alt="Instagram" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="x" alt="Twitter/X" class="w-[35px] h-[35px]" />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="linkedin" alt="LinkedIn" class="w-[35px] h-[35px]" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
