@@ -61,7 +61,7 @@ const handleSubmit = () => {
           v-model="email"
           type="email"
           placeholder="Enter email address"
-          class="flex w-full px-3 py-3 rounded-lg text-[13px] text-[#898989] font-Poppins"
+          class="flex w-full px-3  rounded-lg text-[13px] text-[#898989] font-Poppins border-none focus:outline-none focus:ring-0"
           required
         />
 

@@ -42,7 +42,7 @@ defineProps({
     </div>
 
     <!--searchbar-->
-    <div class="bg-[#F1F1F1] flex items-center rounded-xl space-x-[19px] md:w-[400px] md:mx-auto mt-[33px] md:mt-[74px]">  
+    <div class="bg-[#F1F1F1] flex items-center rounded-xl space-x-[19px] md:w-[400px] h-[49px] pr-4 md:mx-auto mt-[33px] md:mt-[74px]">  
       <span
         ><svg
           width="15"
@@ -58,7 +58,7 @@ defineProps({
           />
         </svg>
       </span>
-      <input type="text" placeholder="Search" class="py-4"/>
+      <input type="text" placeholder="Search" class="w-full border-none focus:outline-none focus:ring-0"/>
     </div>
   </div>
 </template>
