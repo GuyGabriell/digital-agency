@@ -46,7 +46,7 @@ import mobcurve2 from "/public/mobcurve2.svg";
               type="text"
               name=""
               id=""
-              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2"
+              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
           <div class="flex flex-col">
@@ -57,7 +57,7 @@ import mobcurve2 from "/public/mobcurve2.svg";
               type="text"
               name=""
               id=""
-              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2"
+              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
         </div>
@@ -69,7 +69,7 @@ import mobcurve2 from "/public/mobcurve2.svg";
             type="text"
             name=""
             id=""
-            class="md:w-[671px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2"
+            class="md:w-[671px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
           />
         </div>
         <div class="flex flex-col mt-[17px] md:mt-[20px]">
@@ -80,7 +80,7 @@ import mobcurve2 from "/public/mobcurve2.svg";
             type="text"
             name=""
             id=""
-            class="md:w-[671px] md:h-[232px] w-full h-[200px] bg-[#FFFFFF] rounded-[9px] px-2"
+            class="md:w-[671px] md:h-[232px] w-full h-[200px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
           />
         </div>
 

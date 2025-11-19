@@ -1,6 +1,4 @@
 <script setup>
-import images from "/public/images/Bill.png";
-
 defineProps({
   title: {
     type: String,
@@ -10,22 +8,22 @@ defineProps({
 
 const teamMembers = [
   {
-    image: "/public/images/Bill.png",
+    image: "/images/Bill.png",
     name: "John Peter",
     role: "COO",
   },
   {
-    image: "/public/images/Beverly.png",
+    image: "/images/Beverly.png",
     name: "Beverly Smith",
     role: "COO",
   },
   {
-    image: "/public/images/Claudia.png",
+    image: "/images/Claudia.png",
     name: "Claudia White",
     role: "COO",
   },
   {
-    image: "/public/images/Avatar.png",
+    image: "/images/Avatar.png",
     name: "John Peter",
     role: "COO",
   },
