@@ -66,11 +66,12 @@ const links = [
         :key="link.name"
         :to="link.href"
         class="hover:text-gray-600"
+        @click="isOpen = false"
       >
         {{ link.name }}
       </RouterLink>
       <!-- Contact button stays untouched -->
-      <RouterLink to="/contact">
+      <RouterLink to="/contact" @click="isOpen = false">
         <PrimaryButton
           text="Contact Us"
           customClass="bg-[#E47500] !text-[#DC7000] !text-[13px] !w-full !font-Poppins"
