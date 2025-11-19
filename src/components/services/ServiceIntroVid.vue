@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { CheckCircle2, Play } from "lucide-vue-next";
 
-const videoSrc = "public/images/introvid.png";
+const videoSrc = "/images/introvid.png";
 const title = "Lorem Ipsum is simply dummy text.";
 const description =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.";
