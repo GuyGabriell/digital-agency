@@ -1,8 +1,6 @@
 <script setup>
 import Breadcrumb from "@/components/common/Breadcrumb.vue";
 
-
-
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services", current: true },
@@ -19,24 +17,6 @@ defineProps({
       " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 });
-
-// const stats = [
-//   {
-//     value: "90+",
-//     label: "Clients",
-//     icon: "src/assets/icons/people-stats.svg",
-//   },
-//   {
-//     value: "30+",
-//     label: "countries",
-//     icon: "src/assets/icons/location-stats.svg",
-//   },
-//   {
-//     value: "50+",
-//     label: "projects",
-//     icon: "src/assets/icons/toggle-stats.svg",
-//   },
-// ];
 
 const stats = [
   {
@@ -55,7 +35,6 @@ const stats = [
     icon: "/toggle-stats.svg",
   },
 ];
-
 </script>
 
 <template>
@@ -68,17 +47,21 @@ const stats = [
     </div>
 
     <div class="text-center mt-[33px] md:mt-[15px]">
-      <h1 class="font-Poppins text-[25px] md:text-[33px] font-semibold mb-[33px] md:mb-[13px]">
+      <h1
+        class="font-Poppins text-[25px] md:text-[33px] font-semibold mb-[33px] md:mb-[13px]"
+      >
         {{ header }}
       </h1>
-      <p class="font-Poppins text-[#898989] text-[12px] md:text-[16px] font-medium mb-[65px] md:mb-[45px]">
+      <p
+        class="font-Poppins text-[#898989] text-[12px] md:text-[16px] font-medium mb-[65px] md:mb-[45px]"
+      >
         {{ subheader }}
       </p>
     </div>
 
     <!-- stats -->
     <div
-      class="grid grid-cols-2 bg-[#F4F4F4] md:bg-white md:shadow-xl rounded-lg  md:flex md:flex-row mb-[px] md:mb-[77px] md:pl-[90px] md:py-[72px]"
+      class="grid grid-cols-2 bg-[#F4F4F4] md:bg-white md:shadow-xl rounded-lg md:flex md:flex-row mb-[px] md:mb-[77px] md:pl-[90px] md:py-[72px]"
     >
       <div
         v-for="(item, index) in stats"
@@ -92,10 +75,16 @@ const stats = [
           'md:order-none md:col-span-1',
         ]"
       >
-        <img :src="item.icon" :alt="item.label"  class="mr-3 md:mr-5 w-[35px] md:w-[55px] h-[35px] md:h-[55px]"/>
+        <img
+          :src="item.icon"
+          :alt="item.label"
+          class="mr-3 md:mr-5 w-[35px] md:w-[55px] h-[35px] md:h-[55px]"
+        />
 
         <div class="font-Poppins">
-          <p class="font-bold text-[#0B132A] text-[17px] md:text-[25px] leading-[30px]">
+          <p
+            class="font-bold text-[#0B132A] text-[17px] md:text-[25px] leading-[30px]"
+          >
             {{ item.value }}
           </p>
           <p class="font-normal text-[#4F5665] text-[14px] md:text-xl">
