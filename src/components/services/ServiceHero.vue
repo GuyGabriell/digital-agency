@@ -1,6 +1,8 @@
 <script setup>
 import Breadcrumb from "@/components/common/Breadcrumb.vue";
 
+
+
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services", current: true },
@@ -18,23 +20,42 @@ defineProps({
   },
 });
 
+// const stats = [
+//   {
+//     value: "90+",
+//     label: "Clients",
+//     icon: "src/assets/icons/people-stats.svg",
+//   },
+//   {
+//     value: "30+",
+//     label: "countries",
+//     icon: "src/assets/icons/location-stats.svg",
+//   },
+//   {
+//     value: "50+",
+//     label: "projects",
+//     icon: "src/assets/icons/toggle-stats.svg",
+//   },
+// ];
+
 const stats = [
   {
     value: "90+",
     label: "Clients",
-    icon: "src/assets/icons /people-stats.svg",
+    icon: "/people-stats.svg",
   },
   {
     value: "30+",
     label: "countries",
-    icon: "src/assets/icons /location-stats.svg",
+    icon: "/location-stats.svg",
   },
   {
     value: "50+",
     label: "projects",
-    icon: "src/assets/icons /toggle-stats.svg",
+    icon: "/toggle-stats.svg",
   },
 ];
+
 </script>
 
 <template>
