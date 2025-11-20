@@ -6,8 +6,7 @@ const desktopLine1 =
   "Lorem Ipsum is simply dummy text of the printing and typesetting";
 const desktopLine2 = "industry.";
 
-const mobileLine1 =
-  "Lorem Ipsum is simply dummy text of the printing and";
+const mobileLine1 = "Lorem Ipsum is simply dummy text of the printing and";
 const mobileLine2 = "typesetting industry.";
 
 const projects = [

@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  href: { type: String, default: "#" },
+  href: { type: String, default: "" },
 })
 </script>
 

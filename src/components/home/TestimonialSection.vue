@@ -1,6 +1,7 @@
 <script setup>
 import images from "/public/images/testimonial-pic.png";
-import SecondaryButton from "../common/SecondaryButton.vue";
+import PrimaryButton from "../common/PrimaryButton.vue";
+// import SecondaryButton from "../common/SecondaryButton.vue";
 
 const testimonial = {
   image: images,
@@ -12,9 +13,9 @@ const testimonial = {
   buttonText: "Read more",
 };
 
-function handleReadMore() {
-  console.log("Read more clicked!");
-}
+// function handleReadMore() {
+//   console.log("Read more clicked!");
+// }
 </script>
 
 <template>
@@ -61,12 +62,18 @@ function handleReadMore() {
         </p>
 
         <!-- button -->
-        <a :href="testimonial.link" @click.prevent="handleReadMore">
+            <a href="Read more">
+          <PrimaryButton
+            text="Read more"
+            customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !rounded-none !px-6 !py-2"
+          />
+        </a>
+        <!-- <a :href="testimonial.link" @click.prevent="handleReadMore">
           <SecondaryButton
             :text="testimonial.buttonText"
             customClass="!bg-[#DC7000] !text-white !text-base !font-medium !font-Poppins !px-6 !py-2"
           />
-        </a>
+        </a> -->
       </div>
 
       <!-- image-mobile -->
