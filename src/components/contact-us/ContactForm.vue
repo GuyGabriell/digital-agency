@@ -64,7 +64,7 @@ const firstName = ref("");
               type="text"
               name=""
               id=""
-              class="md:w-[322px] w-[150px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
+              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
         </div>
