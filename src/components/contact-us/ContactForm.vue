@@ -4,6 +4,10 @@ import topcurve from "/public/topcurve.svg";
 import bottomcurve from "/public/bottomcurve.svg";
 import mobcurve1 from "/public/mobcurve1.svg";
 import mobcurve2 from "/public/mobcurve2.svg";
+
+import { ref } from "vue";
+
+const firstName = ref("");
 </script>
 
 <template>
@@ -28,6 +32,8 @@ import mobcurve2 from "/public/mobcurve2.svg";
       <img :src="mobcurve1" alt="mobcurve1" class="absolute top-0 right-0" />
       <img :src="mobcurve2" alt="mobcurve2" class="absolute bottom-0 left-0" />
     </div>
+
+
     <!--contactform-->
     <form action="" class="relative">
       <div class="text-center space-y-3">
@@ -39,13 +45,14 @@ import mobcurve2 from "/public/mobcurve2.svg";
       <div class="mt-[79px]">
         <div class="flex space-x-[27px]">
           <div class="flex flex-col">
-            <label for="" class="mb-2 md:mb-6 text-[14px] font-medium text-[#4F4F4F]"
+            <label for="firstname" class="mb-2 md:mb-6 text-[14px] font-medium text-[#4F4F4F]"
               >First Name</label
             >
             <input
-              type="text"
+              v-model="firstName"
               name=""
-              id=""
+              id="firstname"
+              value="FirstName"
               class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
@@ -57,7 +64,7 @@ import mobcurve2 from "/public/mobcurve2.svg";
               type="text"
               name=""
               id=""
-              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
+              class="md:w-[322px] w-[px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
         </div>
