@@ -12,7 +12,7 @@ const firstName = ref("");
 
 <template>
   <div
-    class="relative bg-[#F5F5F5] px-[28px] md:px-[385px] pt-[59px] md:pt-[54px] pb-[61px] md:pb-[63px] md:max-w-[1440px] mb-0 md:mb-[150px] font-Poppins"
+    class="relative bg-[#F5F5F5] pl-[28px] pr-[29px] md:px-[385px] pt-[59px] md:pt-[54px] pb-[61px] md:pb-[63px] md:max-w-[1440px] mb-0 md:mb-[150px] font-Poppins"
   >
     <!--desktop-->
     <div>
@@ -53,7 +53,7 @@ const firstName = ref("");
               name=""
               id="firstname"
               value="FirstName"
-              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
+              class="md:w-[322px] w-full h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
           <div class="flex flex-col">
@@ -64,10 +64,11 @@ const firstName = ref("");
               type="text"
               name=""
               id=""
-              class="md:w-[322px] w-[153px] h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
+              class="md:w-[322px] w-full h-[48px] md:h-[56px] bg-[#FFFFFF] rounded-[9px] px-2 border-none focus:outline-none focus:ring-0"
             />
           </div>
         </div>
+
         <div class="flex flex-col mt-[17px] md:mt-[20px]">
           <label for="" class="mb-2 md:mb-6 text-[14px] font-medium text-[#4F4F4F]"
             >Email Address</label
